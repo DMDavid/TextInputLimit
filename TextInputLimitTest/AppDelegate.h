@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  TextInputLimitTest
 //
-//  Created by aqua on 14-9-2.
-//  Copyright (c) 2014年 aqua. All rights reserved.
+//  Created by David on 16/1/14.
+//  Copyright © 2016年 orangeCat. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

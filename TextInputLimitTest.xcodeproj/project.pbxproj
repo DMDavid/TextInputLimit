@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D86110E1C4737FD0025DDFD /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D86110D1C4737FD0025DDFD /* NSString+Category.m */; };
 		4D8611101C47386F0025DDFD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D86110F1C47386F0025DDFD /* Launch Screen.storyboard */; };
 		5211B3FB19B56CFD00CF13DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211B3FA19B56CFD00CF13DD /* Foundation.framework */; };
 		5211B3FD19B56CFD00CF13DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211B3FC19B56CFD00CF13DD /* CoreGraphics.framework */; };
@@ -21,7 +20,8 @@
 		5211B41A19B56CFD00CF13DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211B41919B56CFD00CF13DD /* XCTest.framework */; };
 		5211B41B19B56CFD00CF13DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211B3FA19B56CFD00CF13DD /* Foundation.framework */; };
 		5211B41C19B56CFD00CF13DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211B3FE19B56CFD00CF13DD /* UIKit.framework */; };
-		63750CAD1C4746B500F770B5 /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 63750CAC1C4746B500F770B5 /* UITextField+Category.m */; };
+		63D739501CEC4303003A0B9E /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D7394D1CEC4303003A0B9E /* NSString+Category.m */; };
+		63D739511CEC4303003A0B9E /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D7394F1CEC4303003A0B9E /* UITextField+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D86110C1C4737FD0025DDFD /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
-		4D86110D1C4737FD0025DDFD /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		4D86110F1C47386F0025DDFD /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5211B3F719B56CFC00CF13DD /* TextInputLimitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextInputLimitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5211B3FA19B56CFD00CF13DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,8 +52,10 @@
 		5211B41219B56CFD00CF13DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5211B41819B56CFD00CF13DD /* TextInputLimitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextInputLimitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5211B41919B56CFD00CF13DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		63750CAB1C4746B500F770B5 /* UITextField+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Category.h"; sourceTree = "<group>"; };
-		63750CAC1C4746B500F770B5 /* UITextField+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Category.m"; sourceTree = "<group>"; };
+		63D7394C1CEC4303003A0B9E /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		63D7394D1CEC4303003A0B9E /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		63D7394E1CEC4303003A0B9E /* UITextField+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Category.h"; sourceTree = "<group>"; };
+		63D7394F1CEC4303003A0B9E /* UITextField+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,6 @@
 		5211B3EE19B56CFC00CF13DD = {
 			isa = PBXGroup;
 			children = (
-				5211B42F19B56D1D00CF13DD /* limitInput */,
 				5211B40019B56CFD00CF13DD /* TextInputLimitTest */,
 				5211B3F919B56CFC00CF13DD /* Frameworks */,
 				5211B3F819B56CFC00CF13DD /* Products */,
@@ -115,6 +114,7 @@
 		5211B40019B56CFD00CF13DD /* TextInputLimitTest */ = {
 			isa = PBXGroup;
 			children = (
+				63D7394B1CEC4303003A0B9E /* TextInputLimit */,
 				5211B40919B56CFD00CF13DD /* AppDelegate.h */,
 				5211B40A19B56CFD00CF13DD /* AppDelegate.m */,
 				5211B40C19B56CFD00CF13DD /* Main.storyboard */,
@@ -123,10 +123,6 @@
 				4D86110F1C47386F0025DDFD /* Launch Screen.storyboard */,
 				5211B41219B56CFD00CF13DD /* Images.xcassets */,
 				5211B40119B56CFD00CF13DD /* Supporting Files */,
-				4D86110C1C4737FD0025DDFD /* NSString+Category.h */,
-				4D86110D1C4737FD0025DDFD /* NSString+Category.m */,
-				63750CAB1C4746B500F770B5 /* UITextField+Category.h */,
-				63750CAC1C4746B500F770B5 /* UITextField+Category.m */,
 			);
 			path = TextInputLimitTest;
 			sourceTree = "<group>";
@@ -142,11 +138,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5211B42F19B56D1D00CF13DD /* limitInput */ = {
+		63D7394B1CEC4303003A0B9E /* TextInputLimit */ = {
 			isa = PBXGroup;
 			children = (
+				63D7394C1CEC4303003A0B9E /* NSString+Category.h */,
+				63D7394D1CEC4303003A0B9E /* NSString+Category.m */,
+				63D7394E1CEC4303003A0B9E /* UITextField+Category.h */,
+				63D7394F1CEC4303003A0B9E /* UITextField+Category.m */,
 			);
-			path = limitInput;
+			path = TextInputLimit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,9 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5211B41119B56CFD00CF13DD /* ViewController.m in Sources */,
+				63D739501CEC4303003A0B9E /* NSString+Category.m in Sources */,
 				5211B40B19B56CFD00CF13DD /* AppDelegate.m in Sources */,
-				4D86110E1C4737FD0025DDFD /* NSString+Category.m in Sources */,
-				63750CAD1C4746B500F770B5 /* UITextField+Category.m in Sources */,
+				63D739511CEC4303003A0B9E /* UITextField+Category.m in Sources */,
 				5211B40719B56CFD00CF13DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +369,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextInputLimitTest/TextInputLimitTest-Prefix.pch";
 				INFOPLIST_FILE = "TextInputLimitTest/TextInputLimitTest-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = orangeCat.com.TextInputLimitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -382,6 +383,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextInputLimitTest/TextInputLimitTest-Prefix.pch";
 				INFOPLIST_FILE = "TextInputLimitTest/TextInputLimitTest-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = orangeCat.com.TextInputLimitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

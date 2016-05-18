@@ -2,8 +2,8 @@
 //  NSString+Category.m
 //  TextInputLimitTest
 //
-//  Created by 夏伟 on 16/1/14.
-//  Copyright © 2016年 aqua. All rights reserved.
+//  Created by David on 16/1/14.
+//  Copyright © 2016年 orangeCat. All rights reserved.
 //
 
 #import "NSString+Category.h"
