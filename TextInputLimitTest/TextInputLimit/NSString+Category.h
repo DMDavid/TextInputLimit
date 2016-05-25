@@ -14,4 +14,7 @@
 
 //判断字符串的字符个数
 + (int)getCharacterFormStr:(NSString *)tempStr;
+
+//过滤emoji
+- (BOOL)stringContainsEmoji;
 @end
