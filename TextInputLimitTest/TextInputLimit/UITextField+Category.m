@@ -7,7 +7,8 @@
 //
 
 #import "UITextField+Category.h"
-#import "NSString+Category.h"
+#import "NSString+Category.h" 
+
 
 @implementation UITextField (Category)
 
@@ -23,6 +24,12 @@
     if (charLen > maxLength) {
         if (![string isEqualToString:@""]) {
             if (self.text.byteLength != maxLength) {
+                
+                //如果输入的最后一个字符是emoji, 且输入后超过最大限制字符编码,则return
+                if (self.text.byteLength + string.byteLength > maxLength && [string stringContainsEmoji]) {
+                    return NO;
+                }
+                
                 [self cutTextFieldString:toBeString bytesLength:maxLength];
             }
             return NO;
@@ -54,5 +61,7 @@
 //        }
 //    }
 }
+
+
 
 @end

@@ -22,6 +22,7 @@
 		5211B41C19B56CFD00CF13DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5211B3FE19B56CFD00CF13DD /* UIKit.framework */; };
 		63D739501CEC4303003A0B9E /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D7394D1CEC4303003A0B9E /* NSString+Category.m */; };
 		63D739511CEC4303003A0B9E /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D7394F1CEC4303003A0B9E /* UITextField+Category.m */; };
+		F9C8F04F1DA8C77300EB2550 /* TextFieldManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C8F04E1DA8C77300EB2550 /* TextFieldManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		63D7394D1CEC4303003A0B9E /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		63D7394E1CEC4303003A0B9E /* UITextField+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Category.h"; sourceTree = "<group>"; };
 		63D7394F1CEC4303003A0B9E /* UITextField+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Category.m"; sourceTree = "<group>"; };
+		F9C8F04D1DA8C77300EB2550 /* TextFieldManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldManager.h; sourceTree = "<group>"; };
+		F9C8F04E1DA8C77300EB2550 /* TextFieldManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				63D7394D1CEC4303003A0B9E /* NSString+Category.m */,
 				63D7394E1CEC4303003A0B9E /* UITextField+Category.h */,
 				63D7394F1CEC4303003A0B9E /* UITextField+Category.m */,
+				F9C8F04D1DA8C77300EB2550 /* TextFieldManager.h */,
+				F9C8F04E1DA8C77300EB2550 /* TextFieldManager.m */,
 			);
 			path = TextInputLimit;
 			sourceTree = "<group>";
@@ -196,6 +201,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = aqua;
 				TargetAttributes = {
+					5211B3F619B56CFC00CF13DD = {
+						DevelopmentTeam = QMNA542VJG;
+					};
 					5211B41719B56CFD00CF13DD = {
 						TestTargetID = 5211B3F619B56CFC00CF13DD;
 					};
@@ -247,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5211B41119B56CFD00CF13DD /* ViewController.m in Sources */,
+				F9C8F04F1DA8C77300EB2550 /* TextFieldManager.m in Sources */,
 				63D739501CEC4303003A0B9E /* NSString+Category.m in Sources */,
 				5211B40B19B56CFD00CF13DD /* AppDelegate.m in Sources */,
 				63D739511CEC4303003A0B9E /* UITextField+Category.m in Sources */,
@@ -366,10 +375,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = QMNA542VJG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextInputLimitTest/TextInputLimitTest-Prefix.pch";
 				INFOPLIST_FILE = "TextInputLimitTest/TextInputLimitTest-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = orangeCat.com.TextInputLimitTest;
+				PRODUCT_BUNDLE_IDENTIFIER = orangeCat.com.TextInputLimitTest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -380,10 +390,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = QMNA542VJG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TextInputLimitTest/TextInputLimitTest-Prefix.pch";
 				INFOPLIST_FILE = "TextInputLimitTest/TextInputLimitTest-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = orangeCat.com.TextInputLimitTest;
+				PRODUCT_BUNDLE_IDENTIFIER = orangeCat.com.TextInputLimitTest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

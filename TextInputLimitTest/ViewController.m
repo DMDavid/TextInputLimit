@@ -9,10 +9,12 @@
 #define MaxNumberOfDescriptionChars 10
 
 
-#import "ViewController.h"
-#import "UITextField+Category.h" 
+#import "ViewController.h" 
+#import "TextFieldManager.h"
 
-@interface ViewController () <UITextFieldDelegate>
+@interface ViewController () <TextFieldLimitDelegate>
+
+@property (nonatomic, strong) TextFieldManager *manager;
 
 @end
 
@@ -22,22 +24,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
-    self.textfield.delegate = self;
-    [self.textfield addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];  
-}
-
-// 监听文本改变
-- (void)textFieldDidChange:(UITextField*)textField
-{
-    [textField limitTextFieldWithBytesLength:MaxNumberOfDescriptionChars];
+    
+    _manager = [[TextFieldManager alloc] init];
+    [_manager limitTextField:self.textfield bytesLength:MaxNumberOfDescriptionChars];
+    _manager.limitDelegate = self;
 }
 
 
-#pragma mark-- UITextfielfDelegate imp
-- (BOOL)textField:(UITextField*)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string
-{
-    return [textField isEnabledWithBytesLength:MaxNumberOfDescriptionChars shouldChangeCharactersInRange:range replacementString:string];
+#pragma mark - 
+
+- (void)limitTextFieldDidChange:(UITextField *)textField {
+    NSLog(@"文本变化 -- %@", textField.text);
 }
 
 @end
