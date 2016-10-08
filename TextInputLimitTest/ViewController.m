@@ -10,11 +10,11 @@
 
 
 #import "ViewController.h" 
-#import "TextFieldManager.h"
+#import "TextFieldLimitManager.h"
 
 @interface ViewController () <TextFieldLimitDelegate>
 
-@property (nonatomic, strong) TextFieldManager *manager;
+@property (nonatomic, strong) TextFieldLimitManager *manager;
 
 @end
 
@@ -25,7 +25,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    _manager = [[TextFieldManager alloc] init];
+    _manager = [[TextFieldLimitManager alloc] init];
     [_manager limitTextField:self.textfield bytesLength:MaxNumberOfDescriptionChars];
     _manager.limitDelegate = self;
 }

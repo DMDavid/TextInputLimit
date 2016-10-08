@@ -1,5 +1,5 @@
 //
-//  TextFieldManager.h
+//  TextFieldLimitManager.h
 //  TextInputLimitTest
 //
 //  Created by David on 16/10/8.
@@ -14,7 +14,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TextFieldManager : NSObject
+@interface TextFieldLimitManager : NSObject
 
 @property (nonatomic, assign) id<TextFieldLimitDelegate> limitDelegate;
 

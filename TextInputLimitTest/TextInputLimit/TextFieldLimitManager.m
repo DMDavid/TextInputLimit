@@ -1,21 +1,21 @@
 //
-//  TextFieldManager.m
+//  TextFieldLimitManager.m
 //  TextInputLimitTest
 //
 //  Created by David on 16/10/8.
 //  Copyright © 2016年 orangeCat. All rights reserved.
 //
 
-#import "TextFieldManager.h"
+#import "TextFieldLimitManager.h"
 #import "UITextField+Category.h"
 
-@interface TextFieldManager() <UITextFieldDelegate>
+@interface TextFieldLimitManager() <UITextFieldDelegate>
 
 @property (nonatomic, assign) NSInteger maxNumberOfDescriptionChars;    //最大限制字符个数
 
 @end
 
-@implementation TextFieldManager
+@implementation TextFieldLimitManager
 
 - (void)limitTextField:(UITextField *)textField bytesLength:(NSInteger)maxLength {
     //赋值代理
