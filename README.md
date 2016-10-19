@@ -11,6 +11,7 @@ TextInputLimit是ios下的一个文本框输入文字长度限制类
 <!--- (void)textFieldDidChange:(UITextField*)textField;-->
 <!--- (BOOL)textField:(UITextField*)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string-->
 <!--master-->
+<!--add Ts2 branch-->
 
 #import "TextFieldLimitManager.h"
 
