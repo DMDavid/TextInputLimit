@@ -19,7 +19,7 @@ TextInputLimit是ios下的一个文本框输入文字长度限制类
 初始化一个全局变量 TextFieldLimitManager *manager;
 
 实现方法:
-- (void)limitTextField:(UITextField *)textField bytesLength:(NSInteger)maxLength;
+         - (void)limitTextField:(UITextField *)textField bytesLength:(NSInteger)maxLength;
 
 
 //参照例子
